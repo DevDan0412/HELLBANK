@@ -18,7 +18,7 @@ O sistema simula as operações básicas de um banco digital com foco em seguran
 
 ## 🚀 Como Executar
 1.  Clone este repositório.
-2.  Importe o banco de dados `banco_hellbank.sql` no seu MySQL.
+2.  Importe o banco de dados `bd_hellbank.sql` no seu MySQL.
 3.  Adicione os JARs da pasta `Bibliotecas` ao seu projeto no NetBeans.
 4.  Configure a senha do banco na classe `ConnectionFactory`.
 5.  Execute a classe `Tela_Login`.
