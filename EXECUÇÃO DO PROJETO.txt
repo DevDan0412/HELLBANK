@@ -1,0 +1,94 @@
+🏛️ PROJETO HELLBANK - MANUAL DE INSTALAÇÃO E EXECUÇÃO
+Grupo 4 Disciplina: Programação de Solução Computacionais  Semestre: 2º Semestre - Ciências da Computação.
+
+
+📋 PRÉ-REQUISITOS
+Para executar este projeto, certifique-se de ter instalado:
+
+
+NetBeans IDE (versão 12 ou superior recomendada).
+
+JDK (Java Development Kit) versão 17 ou superior.
+
+XAMPP ou MySQL Workbench (servidor MySQL rodando na porta 3306).
+
+
+🚀 PASSO A PASSO PARA EXECUÇÃO
+1. CONFIGURAÇÃO DO BANCO DE DADOS
+O sistema depende de um banco de dados MySQL chamado hellbank_db.
+
+Abra seu gerenciador de banco de dados (phpMyAdmin ou Workbench).
+
+Crie um novo banco de dados (Schema) com o nome: hellbank_db.
+
+Importe o arquivo banco_hellbank.sql que está incluído na raiz desta pasta.
+
+Isso criará as tabelas users e transactions com a estrutura correta.
+
+
+
+2. CONFIGURAÇÃO DE CONEXÃO (Importante!)
+Verifique se as credenciais do banco de dados no código correspondem às do seu computador.
+
+Abra o projeto no NetBeans.
+
+Navegue até o pacote HellBank e abra a classe ConnectionFactory.java.
+
+Verifique as linhas:
+
+private static final String USER = "root"; // Usuário padrão
+private static final String PASS = "";     // Insira SUA senha do MySQL aqui (se houver)
+
+Se o seu MySQL tiver senha (ex: "root" ou "1234"), altere a variável PASS.
+
+
+
+3. BIBLIOTECAS E DEPENDÊNCIAS
+O projeto utiliza bibliotecas externas para visual e layout. Caso o NetBeans aponte erros de importação (linhas vermelhas), siga este passo:
+
+No NetBeans, clique com o botão direito na pasta Bibliotecas (Libraries) do projeto.
+
+Selecione "Adicionar JAR/Pasta".
+
+Navegue até a pasta Bibliotecas enviada junto com este projeto.
+
+Selecione e adicione os 3 arquivos:
+
+flatlaf-3.2.5.jar (Look & Feel moderno)
+
+mysql-connector-j-8.X.X.jar (Driver de Conexão)
+
+AbsoluteLayout.jar (Layout das telas)
+
+
+
+4. EXECUTANDO O SISTEMA
+Localize a classe principal Tela_Login.java.
+
+Clique com o botão direito nela e selecione "Executar Arquivo" (Shift + F6).
+
+O sistema fará um teste automático de conexão ao iniciar. Se o banco estiver desligado, uma mensagem de erro será exibida.
+
+🔑 CREDENCIAIS DE ACESSO (TESTE)
+Para testar todas as funcionalidades (incluindo o painel administrativo), utilize o usuário Admin Master já cadastrado no banco:
+
+PERFIL: ADMINISTRADOR MESTRE (Acesso Total)
+
+CPF: 389.593.408-98
+
+Senha: Dam&041210
+
+Nota de Segurança: Este usuário possui proteção contra exclusão e rebaixamento de cargo no sistema.
+
+
+PARA UTILIZAR O LOGIN DE UM USUÁRIO COMUM, CRIE O SEU PRÓPRIO ATRAVÉS DA TELA CADASTRO.
+
+
+🌟 DESTAQUES TÉCNICOS DO PROJETO
+Ao avaliar, observe as seguintes implementações:
+
+Segurança: Bloqueio de saldo insuficiente, Time-out por inatividade e proteção contra SQL Injection.
+
+UX/UI: Tema escuro (FlatLaf) e máscaras de campo.
+
+Funcionalidades: Geração de comprovante em .txt, validação real de CPF/Idade e Easter Eggs interativos.
