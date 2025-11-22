@@ -1,6 +1,6 @@
 # 🔥 HellBank - Sistema Bancário em Java
 
-Projeto desenvolvido como avaliação do 2º Semestre de Tecnologia da Informação.
+Projeto desenvolvido como avaliação do 2º Semestre de Ciência da Computação.
 O sistema simula as operações básicas de um banco digital com foco em segurança e hierarquia de usuários.
 
 ## 🖥️ Tecnologias Utilizadas
